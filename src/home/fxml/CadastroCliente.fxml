@@ -8,25 +8,15 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="anchorPaneMeusFilmes" prefHeight="600.0" prefWidth="981.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:id="anchorPaneMeusFilmes" prefHeight="561.0" prefWidth="1050.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Pane layoutX="20.0" layoutY="43.0" prefHeight="115.0" prefWidth="981.0" style="-fx-background-color: #228B22;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="23.0">
+      <VBox layoutX="10.0" layoutY="163.0" prefHeight="432.0" prefWidth="961.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
          <children>
-            <Label layoutX="36.0" layoutY="31.0" text="Cadastrar Cliente" textFill="WHITE">
-               <font>
-                  <Font name="System Bold Italic" size="36.0" />
-               </font>
-            </Label>
-         </children>
-      </Pane>
-      <VBox layoutX="10.0" layoutY="163.0" prefHeight="432.0" prefWidth="961.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="153.0">
-         <children>
-            <GridPane prefHeight="435.0" prefWidth="961.0">
+            <GridPane prefHeight="507.0" prefWidth="1030.0">
                <columnConstraints>
                   <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="235.0" minWidth="10.0" prefWidth="90.0" />
                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="539.0" minWidth="10.0" prefWidth="375.0" />
@@ -37,16 +27,17 @@
                </columnConstraints>
                <rowConstraints>
                   <RowConstraints maxHeight="172.0" minHeight="10.0" prefHeight="93.0" vgrow="SOMETIMES" />
-                  <RowConstraints maxHeight="246.0" minHeight="10.0" prefHeight="93.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="221.0" minHeight="10.0" prefHeight="93.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="319.0" minHeight="10.0" prefHeight="93.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="246.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="319.0" minHeight="10.0" prefHeight="70.0" vgrow="SOMETIMES" />
                   <RowConstraints maxHeight="319.0" minHeight="10.0" prefHeight="93.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <VBox.margin>
                   <Insets bottom="2.0" />
                </VBox.margin>
                <children>
-                  <Label text="Nome ">
+                  <Label text="Nome " textFill="#fcfafa">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -56,7 +47,7 @@
                         <Font size="14.0" />
                      </font>
                   </TextField>
-                  <Label text="CPF " GridPane.columnIndex="2">
+                  <Label text="CPF " textFill="#fcfafa" GridPane.columnIndex="2">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -71,31 +62,31 @@
                         <Font size="14.0" />
                      </font>
                   </TextField>
-                  <Label text="Idade " GridPane.columnIndex="4">
+                  <Label text="Idade " textFill="#fcfafa" GridPane.columnIndex="4">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Label text="E-mail " GridPane.rowIndex="2">
+                  <Label text="E-mail " textFill="#fcfafa" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Label text="Telefone  " GridPane.columnIndex="2" GridPane.rowIndex="2">
+                  <Label text="Telefone  " textFill="#fcfafa" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <TextField minHeight="30.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                  <Label text="Login " GridPane.rowIndex="1">
+                  <TextField minHeight="30.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Label text="Login " textFill="#fcfafa" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <children>
                         <TextField minHeight="30.0" />
-                        <Label prefHeight="17.0" prefWidth="122.0" text="         Senha ">
+                        <Label prefHeight="17.0" prefWidth="122.0" text="         Senha " textFill="#fcfafa">
                            <font>
                               <Font name="System Bold" size="18.0" />
                            </font>
@@ -103,14 +94,14 @@
                         <TextField minHeight="30.0" />
                      </children>
                   </HBox>
+                  <TextField minHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                   <TextField minHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <TextField minHeight="30.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <Label text="Endereço " GridPane.rowIndex="3">
+                  <Label text="Endereço " textFill="#fcfafa" GridPane.rowIndex="2">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
                   </Label>
-                  <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="107.0" text="Cadastrar" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <Button mnemonicParsing="false" prefHeight="34.0" prefWidth="107.0" text="Cadastrar" GridPane.columnIndex="4" GridPane.rowIndex="5" />
                </children>
             </GridPane>
          </children>

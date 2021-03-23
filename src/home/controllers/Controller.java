@@ -20,43 +20,38 @@ public class Controller implements Initializable {
     private Button btnMeusFilmes;
 
     @FXML
-    private Button btnListaFilmes;
+    private Button btnGenero;
 
     @FXML
-    private Button btnListaClientes;
+    private Button btnFavorito;
 
     @FXML
-    private Button btnCadastraCliente;
+    private Button btnConta;
 
     @FXML
-    private Button btnCadastraFilme;
+    void handleMenuConta(ActionEvent event) throws IOException {
+        carregarTela("Conta");
+    }
+
+    @FXML
+    void handleMenuFavorito(ActionEvent event) throws IOException {
+        carregarTela("Favoritos");
+    }
+
+    @FXML
+    void handleMenuGenero(ActionEvent event) throws IOException {
+        carregarTela("Genero");
+    }
+
 
     @FXML
     void handleMenuMain(ActionEvent event) throws IOException {
         carregarTela("MeusFilmes");
     }
 
-    @FXML
-    void handleMenuListaFilmes(ActionEvent event) throws IOException {
-        carregarTela("ListaFilmes");
-    }
-
-    @FXML
-    void handleMenuCadastraCliente(ActionEvent event) throws IOException {
-        carregarTela("CadastroCliente");
-    }
-
-    @FXML
-    void handleMenuCadastraFilmes(ActionEvent event) throws IOException {
-        carregarTela("CadastroFilmes");
-    }
-
     public void carregarTela(String tela) throws IOException {
         AnchorPane a = (AnchorPane) FXMLLoader.load(getClass().getResource("/home/fxml/"+tela+".fxml"));
         anchorPaneMeusFilmes.getChildren().setAll(a);
-
-
-
 
     }
 

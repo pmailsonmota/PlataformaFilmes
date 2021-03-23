@@ -1,22 +1,22 @@
 .button
 {
-    -fx-background-color: #228B22;
+    -fx-background-color: #808080;
 }
 .button:hover
 {
-    -fx-background-color: #19a463;
+    -fx-background-color: #5D5A56;
 }
 
 .button:pressed
 {
-    -fx-background-color: #008000;
+    -fx-background-color: #000000;
 }
 
 .table-view .column-header,
 .table-view .column-header-background .filler
 {
     -fx-cell-size: 20;
-    -fx-background-color: #2D75E8;
+    -fx-background-color: #808080;
 }
 
 .table-view .column-header .label
